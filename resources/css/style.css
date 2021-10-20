@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: rgb(80, 80, 80);
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-image: url("/resources/images/133406_cutout1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+h1 {
+    color: #f0f0f0;
+    font-size: 5vw;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    /* width: 40%; */
+    max-width: 700px;
+    padding: 50px;
+}
+
+.images {
+    padding: 20px;
+    /* width: 60%; */
+    position: relative;
+}
+
+.imgBox {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.imgBox img {
+    width: 100%;
+}
