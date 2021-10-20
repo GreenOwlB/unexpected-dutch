@@ -17,7 +17,7 @@ body {
 
 header {
     width: 100%;
-    background-image: url("/resources/images/133406_cutout1.jpg");
+    background-image: url(../images/133406_cutout1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
