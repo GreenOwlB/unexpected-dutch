@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* default styles throughout site */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,24 +17,6 @@ body {
     min-height: 100vh;
 }
 
-header {
-    width: 100%;
-    background-image: url(../images/133406_cutout1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-}
-
-h1 {
-    color: #f0f0f0;
-    font-size: 5vw;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
-}
-
 h2 {
     font-size: 1.8rem;
     margin-bottom: 5px;
@@ -45,8 +29,34 @@ p {
     margin-bottom: 10px;
 }
 
+
+
+/* header and nav */
+
+
+header {
+    width: 100%;
+    background-image: url(../images/133406_cutout1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+h1 {
+    color: #f0f0f0;
+    font-size: 5vw;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+/* sections */
+
 main {
     display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -55,24 +65,30 @@ section {
     flex-direction: column;
 }
 
-.intro {
-    width: 100%;
-    margin: 50px 0;
+a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* .intro {
+    height: 50vh;
+    min-height: 400px;
+    margin: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .text {
-    /* width: 40%; */
+    width: 45%;
     max-width: 700px;
     padding: 50px;
 }
 
 .images {
     padding: 20px;
-    /* width: 60%; */
-    position: relative;
+    width: 45%;
+    max-width: 700px;
 }
 
 .imgBox {
@@ -80,8 +96,47 @@ section {
     max-width: 700px;
     padding: 30px;
     overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    
 }
 
 .imgBox img {
     width: 100%;
+}
+
+.source {
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.sourceIndication {
+    font-weight: 700;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    padding-bottom: 200px;
+    align-items: center;
+    width: 100%;
+}
+
+.textRightSide {
+    flex-direction: row-reverse;
+}
+
+.textLeftSide {
+    height: 1000px;
+}
+
+.Aekingerzand {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 2s;
+}
+
+.Aekingerzand.active {
+    opacity: 1;
+    transform: translateY(-200px);
 }
